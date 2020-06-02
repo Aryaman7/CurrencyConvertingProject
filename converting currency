@@ -1,0 +1,146 @@
+import java.util.Scanner;
+	public class CurrencyConvertingSystem {
+		public static void main(String[] args) {
+			while(true) {
+			//while(true) is an infinite loop and true is always true so it will always run.
+				double dollar, pound, rupees, yuan, euros, amount, money, exchange;
+				
+			
+			Scanner scan123 = new Scanner(System.in);
+			//these lines are for organization
+			System.out.println("____________________________________________________________________________");
+			System.out.println("ENTER YOUR FULL NAME: ");
+			System.out.println("____________________________________________________________________________");
+			String obj = scan123.nextLine();
+	
+	
+			Scanner scan = new Scanner(System.in);
+			System.out.println("WELCOME "+ obj +" TO CURRENCY CONVERTER. WHICH CURRENCY WOULD YOU LIKE TO EXCHANGE:");
+			System.out.println("___________________________________________________________________________");
+			System.out.println("1: DOllAR \n2: RUPEES \n3: POUND \n4: YUAN \n5: EUROS");
+			System.out.println("___________________________________________________________________________");
+			money = scan.nextInt();
+			System.out.println("HOW MUCH MONEY DO YOU WANT TO EXCHANGE: ");
+			System.out.println("____________________________________________________________________________");
+			amount = scan.nextInt();
+			System.out.println("WHICH CURRENCY WOULD YOU LIKE TO EXCHANGE TO:");
+			System.out.println("____________________________________________________________________________");
+			System.out.println("1: DOLLAR \n2: RUPEES \n3: POUND \n4: YUAN \n5: EUROS");
+			System.out.println("____________________________________________________________________________");
+			exchange = scan.nextInt();
+		
+		//The currency rate at the time of 6/2/20:
+			if(money == 1 && exchange == 2) {
+			amount = amount*120.24;
+			System.out.println("YOUR EXCHANGE NEPALI RUPEES AMOUNT IS : " +amount);
+			}
+					
+			if(money == 1 && exchange == 3) {
+			amount = amount*0.80;
+			System.out.println("YOUR EXCHANGE POUND AMOUNT IS : " +amount);
+			}
+				
+			if(money == 1 && exchange == 4) {
+			amount = amount*7.10;
+			System.out.println("YOUR EXCHANGE YUAN AMOUNT IS : " +amount);
+			}
+			if(money == 1 && exchange == 5) {
+			amount = amount*0.89;
+			System.out.println("YOUR EXCHANGE EURO AMOUNT IS : " +amount);
+			}
+			
+			if(money == 2 && exchange == 1) {
+			amount = amount*0.0083;
+			System.out.println("YOUR EXCHANGE DOLLAR AMOUNT IS : " +amount);
+			}
+			if(money == 2 && exchange == 3) {
+			amount = amount*0.0066;
+			System.out.println("YOUR EXCHANGE POUND AMOUNT IS : " +amount);
+			}
+					
+			if(money == 2 && exchange == 4) {
+			amount = amount*0.059;
+			System.out.println("YOUR EXCHANGE YUAN AMOUNT IS : " +amount);
+			}
+			if(money == 2 && exchange == 5) {
+			amount = amount*0.0074;
+			System.out.println("YOUR EXCHANGE EURO AMOUNT IS : " +amount);
+			}
+			if(money == 3 && exchange == 1) {
+				amount = amount*1.26;
+				System.out.println("YOUR EXCHANGE DOLLAR AMOUNT IS : " +amount);
+			}
+						
+			if(money == 3 && exchange == 2) {
+			amount = amount*150.91;
+			System.out.println("YOUR EXCHANGE NEPALI RUPEES AMOUNT IS : " +amount);
+			}
+					
+			if(money == 3 && exchange == 4) {
+			amount = amount*8.91;
+			System.out.println("YOUR EXCHANGE YUAN AMOUNT IS : " +amount);
+			}
+			if(money == 3 && exchange == 5) {
+			amount = amount*1.12;
+			System.out.println("YOUR EXCHANGE EURO AMOUNT IS : " +amount);
+			}
+		
+			if(money == 4 && exchange == 1) {
+			amount = amount*0.14;
+			System.out.println("YOUR EXCHANGE DOLLAR AMOUNT IS : " +amount);
+			}
+						
+			if(money == 4 && exchange == 2) {
+			amount = amount*16.93;
+			System.out.println("YOUR EXCHANGE NEPALI RUPEES AMOUNT IS : " +amount);
+			}
+					
+			if(money == 4 && exchange == 3) {
+			amount = amount*0.11;
+			System.out.println("YOUR EXCHANGE POUND AMOUNT IS : " +amount);
+			}
+			if(money == 4 && exchange == 5) {
+			amount = amount*0.13;
+			System.out.println("YOUR EXCHANGE EURO AMOUNT IS : " +amount);
+			}
+			if(money == 5 && exchange == 1) {
+			amount = amount*1.12;
+			System.out.println("YOUR EXCHANGE DOLLAR AMOUNT IS : " +amount);
+			}
+						
+			if(money == 5 && exchange == 2) {
+			amount = amount*134.36;
+			System.out.println("YOUR EXCHANGE NEPALI RUPEES AMOUNT IS : " +amount);
+			}
+					
+			if(money == 5 && exchange == 3) {
+			amount = amount*0.89;
+			System.out.println("YOUR EXCHANGE POUND AMOUNT IS : " +amount);
+			}
+			if(money == 5 && exchange == 4) {
+			amount = amount*7.93;
+			System.out.println("YOUR EXCHANGE YUAN AMOUNT IS : " +amount);
+			}
+			System.out.println("____________________________________________________________________________");
+			System.out.println("THANK YOU FOR USING OUR SERVICE");
+			System.out.println("____________________________________________________________________________");
+			System.out.println("EXCHANGE AGAIN?");
+			System.out.println("____________________________________________________________________________");
+			System.out.println("\nYES \nNO");
+			Scanner scan1 = new Scanner(System.in);
+			String scan11 = scan1.next();
+			if(scan11.equals("YES")||scan11.equals("YES")) {
+			}if(scan11.equals("NO")||scan11.equals("NO")) {
+			System.out.println("GOODBYE");
+				break;
+				
+			}
+		          
+		
+		       
+		}
+		}
+       
+		
+		
+        }
